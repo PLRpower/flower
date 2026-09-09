@@ -377,10 +377,10 @@ We enforce the following PR title format:
 (or ``<type>(<project>:skip): <subject>`` to ignore the PR in the changelog)
 
 Where ``<type>`` needs to be in ``{ci, fix, feat, docs, refactor, break}``,
-``<project>`` should be in ``{devtool, framework, agent, baselines, datasets,
-examples, benchmarks, glossary, intelligence, hub, model, or '*' when
-modifying multiple projects which requires the ':skip' flag to be used}``, and
-``<subject>`` starts with a capitalised verb in the imperative mood.
+``<project>`` should be in ``{devtool, framework, agent, baselines, datasets, examples,
+benchmarks, glossary, intelligence, hub, model, or '*' when modifying multiple projects
+which requires the ':skip' flag to be used}``, and ``<subject>`` starts with a
+capitalised verb in the imperative mood.
 
 Valid examples:
 
