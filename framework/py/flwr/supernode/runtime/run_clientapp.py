@@ -198,7 +198,8 @@ def run_clientapp(  # pylint: disable=R0913, R0914, R0915, R0917
         reason = str(type(ex)) + ":<'" + str(ex) + "'>"
         exc_entity = "ClientApp"
         if isinstance(ex, LoadClientAppError):
-            reason = "An exception was raised when attempting to load `ClientApp`"
+            prefix = "An exception was raised when attempting to load `ClientApp`"
+            reason = f"{prefix}: {ex}" if str(ex) else prefix
             e_code = ErrorCode.LOAD_CLIENT_APP_EXCEPTION
 
         log(ERROR, "%s raised an exception", exc_entity, exc_info=ex)
